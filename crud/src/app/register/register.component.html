@@ -1,0 +1,22 @@
+<div class="container">
+    <form [formGroup]="registerForm">
+        <div class="form-froup">
+            <label>Name</label>
+            <input type="text" class="form-control" formControlName="name">
+        </div>
+        <div class="form-froup">
+            <label>Email</label>
+            <input type="text" class="form-control" formControlName="email">
+        </div>
+        <div class="form-froup">
+            <label>Password</label>
+            <input type="password" class="form-control" formControlName="password">
+        </div>
+        <div class="form-froup">
+            <label>Password confimation</label>
+            <input type="password" class="form-control" formControlName="password_confirmation">
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="register()">Submit</button>
+
+    </form>
+</div>

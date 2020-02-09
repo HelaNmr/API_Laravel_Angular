@@ -1,0 +1,17 @@
+<div class="container">
+  <form [formGroup]="addForm">
+    <div>
+      <label> Category</label>
+      <input class="form-control" formControlName="category">
+    </div>
+    <div>
+      <label> Subject</label>
+      <input class="form-control" formControlName="subject">
+    </div>
+    <div>
+      <label> Content</label>
+      <input class="form-control" formControlName="content">
+    </div>
+    <button type="button" class="btn btn-success" (click)="add()"> Add </button>
+  </form>
+</div>

@@ -1,0 +1,12 @@
+
+<div class="container">
+<form [formGroup]="addForm">
+    <div class="form-group">
+        <label>Content</label>
+        <input type="text" formControlName="content">
+    </div>
+
+    <button class="btn btn-primary" (click)="add()">Add Reply</button>
+</form>
+
+</div>

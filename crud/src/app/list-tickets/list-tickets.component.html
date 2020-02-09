@@ -1,0 +1,33 @@
+<div class="container">
+    <button class="btn btn-primary" [routerLink]="['/add-ticket']">Add Ticket</button>
+    <table>
+        <thead class="thead-dark">
+            <tr>
+                <th>Category</th>
+                <th>Subject</th>
+                <th>Content</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let ticket of listTickets">
+                <td>{{ticket.category}}</td>
+                <td>{{ticket.subject}}</td>
+                <td>{{ticket.content}}</td>
+                <td>
+                    <button type="button" class="btn btn-success" (click)="toReply(ticket)">
+                        Add reply
+                    </button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary" (click)="toEdit(ticket)">
+                        Edit
+                    </button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-danger" (click)="delete(ticket)"> Delete </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
